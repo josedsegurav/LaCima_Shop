@@ -1,19 +1,26 @@
+a {
+  padding: 1%;
+  text-align: center;
+  width: 8%;
+}
+
 h3 {
   color: #FDCB10;
   background-color: #36426A;
   font-family: "Montserrat", sans-serif;
-  font-size: 39px;
+  font-size: 0.85rem;
   font-weight: 400;
   display: inline-block;
+  padding-bottom: 1%;
+  text-align: center;
   width: 100%;
-  letter-spacing: 4px;
 }
 
 p {
   color: #36426A;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 26px;
+  font-size: 0.7rem;
   width: 100%;
 }
 
@@ -29,12 +36,16 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
   width: 100%;
+  /* transition: top 0.3s; falta JS */
 }
 
 .navlogo_img {
-  width: 4%;
-  padding: 1%;
+  width: 100%;
+  padding-left: 5%;
 }
 
 .navlogocompleto_img {
@@ -43,31 +54,34 @@ p {
 
 .fas {
   color: #FDCB10;
-  padding-right: 1%;
+  padding-right: 5%;
 }
 
 /* Logo Principal */
 .header_logo {
-  padding: 5% 20% 0;
-  width: 60%;
+  margin-top: 15%;
+  padding: 5% 15% 0;
+  width: 70%;
 }
 
 .header__logo_img {
   width: 100%;
 }
 
+.header_text {
+  margin-bottom: 12%;
+}
+
 .header_button {
   border-radius: 20px;
   color: #36426A;
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+  font-size: 0.9rem;
   font-weight: 600;
-  margin: 5% 0;
-  padding: 15px 30px;
+  padding: 3% 7%;
   background-color: #FDCB10;
   border: solid #FFDE82 0;
   text-decoration: none;
-  display: inline-block;
   cursor: pointer;
   text-align: center;
 }
@@ -80,7 +94,7 @@ p {
 }
 
 .header_yogurtimg {
-  margin: 5% 0;
+  margin: 10% 0 0;
   width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
