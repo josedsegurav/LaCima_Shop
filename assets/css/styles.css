@@ -1,0 +1,86 @@
+h3 {
+  color: #FDCB10;
+  background-color: #36426A;
+  font-family: "Montserrat", sans-serif;
+  font-size: 39px;
+  font-weight: 400;
+  display: inline-block;
+  width: 100%;
+  letter-spacing: 4px;
+}
+
+p {
+  color: #36426A;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  width: 100%;
+}
+
+/* Nav bar */
+.headernav_div {
+  background-color: #36426A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.navlogo_img {
+  width: 4%;
+  padding: 1%;
+}
+
+.navlogocompleto_img {
+  width: 9%;
+}
+
+.fas {
+  color: #FDCB10;
+  padding-right: 1%;
+}
+
+/* Logo Principal */
+.header_logo {
+  padding: 5% 20% 0;
+  width: 60%;
+}
+
+.header__logo_img {
+  width: 100%;
+}
+
+.header_button {
+  border-radius: 20px;
+  color: #36426A;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 5% 0;
+  padding: 15px 30px;
+  background-color: #FDCB10;
+  border: solid #FFDE82 0;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.header_button:hover {
+  background: #FFDE82;
+  border: solid #FFDE82 1px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.header_yogurtimg {
+  margin: 5% 0;
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */
