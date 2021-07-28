@@ -2,6 +2,7 @@ h2 {
     background-color: $color-brand-primary;
     color: #fff;
     font-family: $font-brand;
+
     padding: 5% 0;
     text-align: center;
 }
@@ -13,8 +14,9 @@ h2:hover{
 h4 {
     color: #fff;
     font-family: $font-brand;
-    font-weight: 400;
+    font-weight: 700;
     margin: 0;
+    opacity: 1;
 }
 
 /*Products Section*/
@@ -34,8 +36,6 @@ h4 {
 
 .grid_item {
     background-color: $color-brand-primary;
-    
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;

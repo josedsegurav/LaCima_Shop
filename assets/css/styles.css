@@ -230,8 +230,9 @@ h2:hover {
 h4 {
   color: #fff;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   margin: 0;
+  opacity: 1;
 }
 
 /*Products Section*/
@@ -251,7 +252,6 @@ h4 {
 
 .grid_item {
   background-color: #36426A;
-  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
