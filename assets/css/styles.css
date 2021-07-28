@@ -1,7 +1,15 @@
+html {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
 a {
-  padding: 1%;
-  text-align: center;
-  width: 8%;
+  text-decoration: none;
 }
 
 h3 {
@@ -16,12 +24,40 @@ h3 {
   width: 100%;
 }
 
+@media (min-width: 600px) {
+  h3 {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    padding: 1% 0 1% 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 1.8rem;
+    width: 60%;
+  }
+}
+
 p {
   color: #36426A;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 0.7rem;
   width: 100%;
+}
+
+@media (min-width: 600px) {
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  p {
+    font-size: 1.5rem;
+    width: 60%;
+  }
 }
 
 /* Nav bar */
@@ -43,29 +79,81 @@ p {
   /* transition: top 0.3s; falta JS */
 }
 
+@media (min-width: 1024px) {
+  .headernav_div {
+    overflow: unset;
+    position: static;
+  }
+}
+
+.logohome_link {
+  padding: 1%;
+  text-align: center;
+  width: 8%;
+}
+
+@media (min-width: 1024px) {
+  .logohome_link {
+    padding: 5px;
+    width: 3%;
+  }
+}
+
 .navlogo_img {
   width: 100%;
   padding-left: 5%;
 }
 
 .navlogocompleto_img {
-  width: 9%;
+  width: 11%;
 }
 
-.fas {
+@media (min-width: 600px) {
+  .navlogocompleto_img {
+    display: none;
+  }
+}
+
+.fas, .far {
   color: #FDCB10;
   padding-right: 5%;
 }
 
+@media (min-width: 600px) {
+  #Home i {
+    display: none;
+  }
+}
+
 /* Logo Principal */
-.header_logo {
+.header_logodiv {
   margin-top: 15%;
+  border-bottom: solid 1% #FDCB10;
   padding: 5% 15% 0;
   width: 70%;
 }
 
+@media (min-width: 1024px) {
+  .header_logodiv {
+    background-image: url("../images/frambuesa.png");
+    background-size: 110%;
+    background-position: -130% 0%;
+    margin-top: 0;
+    padding: 5% 0 10% 5%;
+    position: relative;
+    overflow: hidden;
+    width: 95%;
+  }
+}
+
 .header__logo_img {
   width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .header__logo_img {
+    width: 60%;
+  }
 }
 
 .header_text {
@@ -86,6 +174,19 @@ p {
   text-align: center;
 }
 
+@media (min-width: 600px) {
+  .header_button {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header_button {
+    font-size: 1.8rem;
+    padding: 2% 6%;
+  }
+}
+
 .header_button:hover {
   background: #FFDE82;
   border: solid #FFDE82 1px;
@@ -95,6 +196,244 @@ p {
 
 .header_yogurtimg {
   margin: 10% 0 0;
+  position: absolute;
+  bottom: 5%;
+  right: 0;
   width: 100%;
+}
+
+@media (min-width: 600px) {
+  .header_yogurtimg {
+    bottom: -10%;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header_yogurtimg {
+    display: none;
+  }
+}
+
+h2 {
+  background-color: #36426A;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  padding: 5% 0;
+  text-align: center;
+}
+
+h2:hover {
+  background-color: #FDCB10;
+}
+
+h4 {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+/*Products Section*/
+#products {
+  margin: 100% 0 10%;
+}
+
+.product_grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2%;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  padding: 5% 5% 0;
+  width: 90%;
+}
+
+.grid_item {
+  background-color: #36426A;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  position: relative;
+  width: 90%;
+}
+
+.item_1:before {
+  content: "";
+  background-image: url("../images/1.jpg");
+  background-size: cover;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.item_1:hover:before {
+  opacity: 1;
+}
+
+.item_2:before {
+  content: "";
+  background-image: url("../images/2.jpg");
+  background-size: cover;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.item_2:hover:before {
+  opacity: 1;
+}
+
+.item_3:before {
+  content: "";
+  background-image: url("../images/3.jpg");
+  background-size: cover;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.item_3:hover:before {
+  opacity: 1;
+}
+
+.item_4:before {
+  content: "";
+  background-image: url("../images/4.jpg");
+  background-size: cover;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.item_4:hover:before {
+  opacity: 1;
+}
+
+.item_5:before {
+  content: "";
+  background-image: url("../images/5.jpg");
+  background-size: cover;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.item_5:hover:before {
+  opacity: 1;
+}
+
+.item_6:before {
+  content: "";
+  background-image: url("../images/6.jpg");
+  background-size: cover;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.item_6:hover:before {
+  opacity: 1;
+}
+
+.item_link {
+  padding: 55px 0;
+}
+
+/*Steps Section*/
+#steps {
+  background-color: #36426A;
+  height: 85vh;
+  margin-top: 15%;
+}
+
+.step_p {
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+}
+
+.steps_grid {
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 2%;
+  grid-row-gap: 10%;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  padding: 5% 10% 0;
+}
+
+.stepgrid_item1 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  width: 100%;
+}
+
+.stepgrid_item2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 4;
+  padding: 0 0 0 20%;
+  text-align: left;
+  width: 79%;
+}
+
+.stepgrid_item3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 0 20% 0 0;
+  text-align: left;
+  width: 79%;
+}
+
+.stepgrid_item4 {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 4;
+  width: 100%;
+}
+
+.step_hr {
+  background-color: #FDCB10;
 }
 /*# sourceMappingURL=styles.css.map */

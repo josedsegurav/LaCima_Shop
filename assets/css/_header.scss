@@ -1,7 +1,5 @@
 a {
-    padding: 1%;
-    text-align: center;
-    width: 8%;
+    text-decoration: none;
 }
 
 h3 {
@@ -14,7 +12,18 @@ h3 {
     padding-bottom: 1%;
     text-align: center;
     width: 100%;
-    //letter-spacing: 4px;
+
+    @include for-tablet {
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        padding: 1% 0 1% 0;
+    }
+
+    @include for-desktop {
+        font-size: 1.8rem;
+        width: 60%;
+    }
+    
 }
 
 p {
@@ -23,6 +32,15 @@ p {
     font-weight: 400;
     font-size: 0.7rem;
     width: 100%;
+
+    @include for-tablet {
+        font-size: 1.3rem;
+    }
+    
+    @include for-desktop {
+        font-size: 1.5rem;
+        width: 60%;
+    }
 }
 
 /* Nav bar */
@@ -37,6 +55,22 @@ p {
     top: 0;
     width: 100%;
     /* transition: top 0.3s; falta JS */
+
+    @include for-desktop {
+        overflow: unset;
+        position: static;
+    }
+}
+
+.logohome_link {
+    padding: 1%;
+    text-align: center;
+    width: 8%;
+
+    @include for-desktop {
+        padding: 5px;
+        width: 3%;
+    }
 }
 
 .navlogo_img {
@@ -45,26 +79,56 @@ p {
 }
 
 .navlogocompleto_img {
-    width: 9%;
+    width: 11%;
+
+    @include for-tablet {
+        display: none;
+    }
 }
 
-.fas {
+.fas, .far {
     color: $color-brand-secondary;
     padding-right: 5%;
+}
 
+#Home {
+    i {
+    @include for-tablet {
+        display: none;
+    }
+}
 }
 
 /* Logo Principal */
 
-.header_logo {
+.header_logodiv {
     margin-top: 15%;
+    border-bottom: solid 1% $color-brand-secondary;
+    //overflow: hidden;
     padding: 5% 15% 0;
     width: 70%;
+
+    @include for-desktop {
+        background-image: url("../images/frambuesa.png");
+        background-size: 110%;
+        background-position: -130% 0%;
+        margin-top: 0;
+        padding: 5% 0 10% 5%;
+        position: relative;
+        overflow: hidden;
+        width: 95%;
+    }
 }
 
 .header__logo_img {
-    width: 100%;
+    width: 100%;    
+
+    @include for-desktop {
+        width: 60%;
+    }
 }
+
+
 
 .header_text {
     margin-bottom: 12%;
@@ -84,6 +148,15 @@ p {
     text-decoration: none;
     cursor: pointer;
     text-align: center;
+
+    @include for-tablet {
+        font-size: 1.5rem;
+    }
+
+    @include for-desktop{
+        font-size: 1.8rem;
+        padding: 2% 6%;
+    }
  }
  
  .header_button:hover {
@@ -97,5 +170,17 @@ p {
 
  .header_yogurtimg {
     margin: 10% 0 0;
+    position: absolute;
+    bottom: 5%;
+    right: 0;
     width: 100%;
+
+    @include for-tablet {
+        bottom: -10%;
+        z-index: -1;
+    }
+
+    @include for-desktop {
+       display: none;
+    }
 }
