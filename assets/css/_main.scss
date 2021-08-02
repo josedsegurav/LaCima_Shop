@@ -2,9 +2,13 @@ h2 {
     background-color: $color-brand-primary;
     color: #fff;
     font-family: $font-brand;
-
     padding: 5% 0;
     text-align: center;
+
+    @include for-tablet {
+        margin-bottom: 0;
+        font-size: 3rem;
+    }
 }
 
 h2:hover{
@@ -22,7 +26,11 @@ h4 {
 /*Products Section*/
 
 #products {
-    margin: 100% 0 10%;
+    margin: 10% 0 10%;
+    
+    @include for-tablet {
+        margin: 60% 0 10%;
+    }
 
 }
 
@@ -40,8 +48,10 @@ h4 {
     justify-content: center;
     align-items: center;
     margin: auto;
+    padding: 20% 0;
     position: relative;
-    width: 90%;
+    width: 83%;
+
 }
 
 .item_1:before {
@@ -141,15 +151,23 @@ h4 {
 }
 
 .item_link {
-    padding: 55px 0;;
+    padding: 55px 0;
+    
+    @include for-tablet {
+        font-size: 2.1rem;
+    }
 }
 
 /*Steps Section*/
 
 #steps {
     background-color: $color-brand-primary;
-    height: 85vh;
     margin-top: 15%;
+    padding-bottom: 35%;
+
+    @include for-tablet {
+        padding-bottom: 50%;
+    }
 
 }
 
@@ -157,6 +175,10 @@ h4 {
     color: #fff;
     font-weight: 600;
     margin: 0;
+
+    @include for-tablet {
+        font-size: 1.5rem;
+    }
 }
 
 .steps_grid {
@@ -165,6 +187,13 @@ h4 {
     grid-row-gap: 10%;
     grid-template-columns: auto auto auto;
     padding: 5% 10% 0;
+
+    @include for-tablet {
+        grid-row-gap: 20%;
+        .far, .fas {
+            font-size: 8rem;
+        }
+    }
 }
 
 .stepgrid_item1 {
@@ -197,8 +226,4 @@ h4 {
     grid-column-start: 3;
     grid-column-end: 4;
     width: 100%;
-}
-
-.step_hr {
-    background-color: $color-brand-secondary;
 }

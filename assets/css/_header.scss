@@ -34,6 +34,7 @@ p {
     width: 100%;
 
     @include for-tablet {
+        color: $color-brand-secondary-light;
         font-size: 1.3rem;
     }
     
@@ -54,6 +55,7 @@ p {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 2;
     /* transition: top 0.3s; falta JS */
 
     @include for-desktop {
@@ -81,7 +83,7 @@ p {
 .navlogocompleto_img {
     width: 11%;
 
-    @include for-tablet {
+    @include for-desktop {
         display: none;
     }
 }
@@ -93,7 +95,7 @@ p {
 
 #Home {
     i {
-    @include for-tablet {
+    @include for-desktop {
         display: none;
     }
 }
@@ -103,7 +105,6 @@ p {
 
 .header_logodiv {
     margin-top: 15%;
-    border-bottom: solid 1% $color-brand-secondary;
     //overflow: hidden;
     padding: 5% 15% 0;
     width: 70%;
@@ -138,13 +139,13 @@ p {
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 20px;
-    color: #36426A;
+    color: $color-brand-primary;
     font-family: $font-brand;
     font-size: 0.9rem;
     font-weight: 600;
     padding: 3% 7%;
-    background-color: #FDCB10;
-    border: solid #FFDE82 0;
+    background-color: $color-brand-secondary;
+    border: solid $color-brand-secondary-light 0;
     text-decoration: none;
     cursor: pointer;
     text-align: center;
@@ -160,8 +161,8 @@ p {
  }
  
  .header_button:hover {
-    background: #FFDE82;
-    border: solid #FFDE82 1px;
+    background: $color-brand-secondary-light;
+    border: solid $color-brand-secondary-light 1px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 25px;
@@ -170,13 +171,11 @@ p {
 
  .header_yogurtimg {
     margin: 10% 0 0;
-    position: absolute;
-    bottom: 5%;
-    right: 0;
     width: 100%;
 
     @include for-tablet {
-        bottom: -10%;
+        bottom: 0%;
+        position: absolute;
         z-index: -1;
     }
 

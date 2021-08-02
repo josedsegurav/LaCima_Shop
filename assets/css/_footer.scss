@@ -1,0 +1,156 @@
+input[type=text], input[type=number], textarea {
+    border-color: $color-brand-primary-light;
+    border-style: ridge;
+    font-family: $font-brand;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin: 1% 0 3%;
+    padding: 1%;
+    width: 97%;
+
+    @include for-tablet {
+        font-size: 1.7rem;
+    }
+}
+
+input[type=submit] {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 20px;
+    color: $color-brand-secondary;
+    font-family: $font-brand;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 3% 7%;
+    background-color: $color-brand-primary;
+    border: solid #FFDE82 0;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+
+    @include for-tablet {
+        font-size: 1.5rem;
+    }
+}
+
+input[type=submit]:hover {
+    background: $color-brand-primary-light;
+    border: solid $color-brand-primary-light 1px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    text-decoration: none;
+ }
+
+label {
+    font-family: $font-brand;
+    font-size: 0.9rem;
+    font-weight: 400;
+
+    @include for-tablet {
+        font-size: 1.7rem;
+    }
+}
+
+#contact {
+    width: 90%;
+    padding: 2% 5%;
+
+    @include for-tablet {
+        h3 {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+#blog {
+    background-image: url(../images/blogimg.jpg);
+    background-position: bottom;
+    background-size: cover;
+    height: 40vh;
+    padding: 15% 0 0 10%;
+    width: 90%;
+
+    @include for-tablet {
+        background-position: 0 70%;
+    }
+
+}
+
+.blog_button {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 20px;
+    color: $color-brand-secondary;
+    font-family: $font-brand;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 3% 7%;
+    background-color: $color-brand-primary;
+    border: solid #FFDE82 0;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+
+    @include for-tablet {
+        font-size: 1.5rem;
+    }
+}
+
+.blog_button:hover {
+    background: $color-brand-primary-light;
+    border: solid $color-brand-primary-light 1px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    text-decoration: none;
+ }
+
+.footer {
+    background-color: $color-brand-primary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+    padding: 2% 4%;
+    width: 92%;
+
+}
+
+.footer_logo {
+    //padding: 1%;
+    text-align: center;
+    width: 15%;
+
+    @include for-tablet {
+        width: 17%;
+    }
+}
+
+.footer_logo__img {
+    width: 100%;
+}
+
+.footer_social {
+    width: 28%;
+    display: flex;
+    justify-content: space-between;
+    .fas {
+        color: #fff;
+        
+        @include for-tablet {
+            font-size: 2.7rem;
+        }
+    }
+
+    @include for-tablet {
+        width: 40%;
+    }
+}
+
+.fab {
+    color: #fff;
+    @include for-tablet {
+        font-size: 2.7rem;
+    }
+}
