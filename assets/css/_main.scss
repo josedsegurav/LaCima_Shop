@@ -1,0 +1,324 @@
+h2 {
+    background-color: $color-brand-primary;
+    color: #fff;
+    font-family: $font-brand;
+    padding: 5% 0;
+    text-align: center;
+
+    @include for-tablet {
+        margin-bottom: 0;
+        font-size: 2.5rem;
+    }
+
+    @include for-tablet-landscape {
+        margin-bottom: 0;
+        font-size: 3rem;
+    }
+
+    @include for-desktop {
+        font-size: 2.7rem;
+        padding: 2% 0;
+        width: 40%;
+    }
+}
+
+h2:hover{
+    background-color: $color-brand-secondary;
+}
+
+h4 {
+    color: #fff;
+    font-family: $font-brand;
+    font-weight: 700;
+    margin: 0;
+    opacity: 1;
+}
+
+/*Products Section*/
+
+#products {
+    margin: 10% 0 10%;
+    
+    @include for-tablet {
+        margin: 75% 0 10%;
+    }
+
+    @include for-tablet-landscape {
+        margin: 60% 0 10%;
+    }
+
+    @include for-desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10% 0 10%;
+    }
+
+}
+
+.product_grid {
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: auto auto;
+    padding: 5% 5% 0;
+    width: 90%;
+
+    @include for-desktop {
+        grid-template-columns: auto auto auto;
+
+    }
+}
+
+.grid_item {
+    background-color: $color-brand-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10% 0;
+    position: relative;
+    width: 90%;
+
+    @include for-tablet {
+        padding: 17% 0;
+        width: 93%;
+    }
+
+}
+
+.item_1:before {
+    content: "";
+    background-image: url("../images/1.jpg");
+    background-size: cover;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;    
+}
+
+.item_1:hover:before {
+    opacity: 1;  
+}
+
+.item_2:before {
+    content: "";
+    background-image: url("../images/2.jpg");
+    background-size: cover;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;    
+}
+
+.item_2:hover:before {
+    opacity: 1;  
+}
+
+.item_3:before {
+    content: "";
+    background-image: url("../images/3.jpg");
+    background-size: cover;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;    
+}
+
+.item_3:hover:before {
+    opacity: 1;  
+}
+
+.item_4:before {
+    content: "";
+    background-image: url("../images/4.jpg");
+    background-size: cover;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;    
+}
+
+.item_4:hover:before {
+    opacity: 1;  
+}
+
+.item_5:before {
+    content: "";
+    background-image: url("../images/5.jpg");
+    background-size: cover;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;    
+}
+
+.item_5:hover:before {
+    opacity: 1;  
+}
+
+.item_6:before {
+    content: "";
+    background-image: url("../images/6.jpg");
+    background-size: cover;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;    
+}
+
+.item_6:hover:before {
+    opacity: 1;  
+}
+
+.item_link {
+    padding: 55px 0;
+    
+    @include for-tablet {
+        font-size: 1.9rem;
+    }
+
+        @include for-tablet-landscape {
+        font-size: 2.1rem;
+    }
+}
+
+
+/*Steps Section*/
+
+#steps {
+    background-color: $color-brand-primary;
+    margin-top: 15%;
+    padding-bottom: 35%;
+
+    @include for-tablet {
+        padding-bottom: 60%;
+    }
+    @include for-tablet-landscape {
+        padding-bottom: 50%;
+    }
+
+    @include for-desktop {
+        padding-bottom: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+.step_p {
+    color: #fff;
+    font-weight: 600;
+    margin: 0;
+
+    @include for-tablet {
+        font-size: 1.3rem;
+    }
+
+    @include for-tablet-landscape {
+        font-size: 1.5rem;
+    }
+
+    @include for-desktop {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+}
+
+.steps_grid {
+    display: grid;
+    grid-column-gap: 2%;
+    grid-row-gap: 10%;
+    grid-template-columns: auto auto auto;
+    padding: 5% 10% 0;
+
+    @include for-tablet {
+        grid-row-gap: 20%;
+        .far, .fas {
+            font-size: 7.5rem;
+        }
+    }
+
+    @include for-tablet {
+        grid-row-gap: 20%;
+        .far, .fas {
+            font-size: 8rem;
+        }
+    }
+
+    @include for-desktop {
+        grid-row-gap: 45%;
+        grid-column-gap: 2%;
+        grid-template-columns: auto auto auto auto;
+        padding: 5% 5% 0;
+    }
+    
+}
+
+.stepgrid_item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 100%;
+
+    @include for-desktop {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+}
+
+.stepgrid_item2 {
+    display: flex;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding: 0 0 0 20%;
+    text-align: left;
+    width: 79%;
+
+    @include for-desktop {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        padding: 0 0 0 5%;
+        width: 100%;
+    }
+}
+
+.stepgrid_item3 {
+    display: flex;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 0 20% 0 0;
+    text-align: left;
+    width: 79%;
+
+    @include for-desktop {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        padding: 0 0 0 10%;
+        width: 100%;
+    }
+}
+
+.stepgrid_item4 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    width: 100%;
+
+    @include for-desktop {
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+}
